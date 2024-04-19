@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="container">
+                <img id="logo" src="logo.png" alt="logo de the blue house">
+                <h1>The Blue House Hostal</h1>
+                <h2>Reporte turno recepcion</h2>
+                <form action>
+                    <section class="turno option">
+                        <label for="turno">Que turno reportas:</label>
+                        <select class="select_turno" id="turno" name="turno">
+                            <option value>Seleccionar Turno</option>
+                            <option value="Mañana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noche">Noche</option>
+                        </select>
+                    </section>
+                    <section class="privada option">
+                        <label for="privadas">Privadas ocupadas y
+                            huespedes:</label>
+                        <button id="seleccionarButton">Seleccionar</button>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <div id="privada-modal" class="modal">
+            <div class="content-modal">
+                <div class="privada-content">
+                    <table class="table_privada">
+                        <thead>
+                            <tr>
+                                <th>Habitacion: </th>  
+                                <th>Huespedes </th>  
+                                <th>Check? </th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alejandria</td>
+                                <td>
+                                    <Select class="select-privada">
+                                        <option value="">2</option>
+                                        <option value="">1</option>
+                                    </Select>
+                                </td>
+                                <td>
+                                    <input  type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jacobo</td>
+                                <td>
+                                    <Select class="select-privada">
+                                        <option value="">2</option>
+                                        <option value="">1</option>
+                                    </Select>
+                                </td>
+                                <td>
+                                    <input  type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lourdes</td>
+                                <td>
+                                    <Select class="select-privada">
+                                        <option value="">2</option>
+                                        <option value="">1</option>
+                                    </Select>
+                                </td>
+                                <td>
+                                    <input  type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Macedonia</td>
+                                <td>
+                                    <Select class="select-privada">
+                                        <option value="">2</option>
+                                        <option value="">1</option>
+                                    </Select>
+                                </td>
+                                <td>
+                                    <input  type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vita</td>
+                                <td>
+                                    <Select class="select-privada">
+                                        <option value="">2</option>
+                                        <option value="">1</option>
+                                    </Select>
+                                </td>
+                                <td>
+                                    <input  type="checkbox">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button>Guardar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
